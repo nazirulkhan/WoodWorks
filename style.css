@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header section */
+
+header{
+    background: url(./img/ia_200000019.jpg) no-repeat center center;
+    background-size: cover;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+.top-header{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 40px;
+}
+.main-menu{
+    padding: 23px;
+}
+.main-menu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 20px;
+}
+.main-menu ul li a::before{
+    content: "";
+    background-color: #c69453;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transition: .5s;
+    
+}
+.main-menu ul li a:hover::before{
+    width: 100%;
+    left: 0;    
+}
+.main-menu ul li a.home{
+    color: #c69453;
+}
+.main-menu ul li:hover > a{
+    color: #c69453;
+}
+.main-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 250px;
+    background-color: #fff;
+    transition: .5s;
+    color: #000;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: center;
+    margin-top: 15px;
+}
+.main-menu ul li ul li{
+    display: block;
+    padding: 15px;
+}
+.main-menu ul li ul li a{
+    display: block;
+}
+.main-menu ul li ul li:hover{
+    background-color: #ddd;
+    color: #c69453;
+}
+.main-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);   
+}
+.header-contant{
+    padding: 200px 0;
+}
+.header-contant h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.header-contant p{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.header-btn {
+    background-color: #c69453;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+.header-btn:hover{
+    background-color: #fff;
+    color: #c69453;
+}
+/* service section */
+
+.service{
+    background-color:#f8f8f8;
+    padding: 75px;
+}
+.service-1{
+    width:23%;
+    background-color: #fff;
+    margin: 10px;
+}
+.service-1 img{
+    margin: 10px;
+}
+.service-1 h3{
+    margin: 10px;
+}
+.service-1 p{
+    margin: 10px;
+}
+.service-btn {
+    background-color: #c69453;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 25px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+.service-1:hover{
+    background-color: #ddd;
+}
+.service-1:hover img{
+    transform: rotate3d(0, 2, 0, 360deg);
+    transition: 0.7s;
+}
+.service-1:hover .service-btn{
+    background-color: #fff;
+    color: #c69453;
+}
+.service-1 .service-btn:hover{
+    background-color: #000;
+    color: #fff;
+    transform: translate(0px,8px);
+}
+.video-content-right h1 span{
+    color: #c69453;
+}
+
+/* about section */
+
+.about{
+    padding: 100px;
+    background-color:#f8f8f8;
+}
+.video-left{
+
+}
+.video-content-right{
+    width: 500px;
+}
+.video-content-right p{
+    padding: 20px 0;
+}
+.about-btn {
+    background-color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+.about-btn:hover{
+    background-color: #c69453;
+}
+
+.contact{
+    padding: 130px;
+    background: url(./img/ia_200000022.jpg) no-repeat center center;
+    background-size: cover;
+}
+form{
+    width: 40%;
+}
+input{
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+textarea{
+    height: 100px;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:10px ;
+}
+.submit-btn {
+    background-color: #c69453;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
